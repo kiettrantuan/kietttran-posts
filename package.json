@@ -1,0 +1,12 @@
+{
+  "name": "kietttran-posts",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:kiettrantuan/kietttran-posts.git",
+  "author": "kietttran <kiettt1997@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "node categories.js",
+    "up:cat": "node categories.js"
+  }
+}
