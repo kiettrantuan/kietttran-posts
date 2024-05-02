@@ -5,18 +5,19 @@ const fs = require("node:fs/promises");
  * script create files w frontmatter fields
  */
 
-const cs = {
-  test: {
-    title: "Test",
-    description: "This is Category Test",
-  },
-  others: {
-    title: "Others",
-    description: "This is Category Others",
-  },
-};
-
 async function main() {
+  const cs = {
+    lastUpdated: Date.now(),
+    data: [
+      { id: "test", title: "Test", description: "This is Category Test" },
+      {
+        id: "others",
+        title: "Others",
+        description: "This is Category Others",
+      },
+    ],
+  };
+
   try {
     await fs.writeFile("./categories.json", JSON.stringify(cs));
     console.log("SUCCESS !");
