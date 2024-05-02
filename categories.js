@@ -15,6 +15,7 @@ async function main() {
         title: "Others",
         description: "This is Category Others",
       },
+      { id: "test2", title: "Test2", description: "This is Category Test2" },
     ],
   };
 
